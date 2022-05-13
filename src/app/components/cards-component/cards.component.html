@@ -1,0 +1,8 @@
+<div class="card-container">
+  <div class="card" *ngFor="let product of products" (click)="onCardClick(product)">
+    <h1>{{product.item_name}}</h1>
+    <img [src]="product.image" >
+    <p>{{product.item_description}}</p>
+  </div>
+</div>
+

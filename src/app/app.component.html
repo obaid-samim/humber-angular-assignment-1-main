@@ -1,0 +1,5 @@
+<nav-bar></nav-bar>
+<modal (close)="closeModal()" *ngIf="showModal" [product]="productModal"></modal>
+
+<!-- add code here for cards -->
+  <cards [products]="products" (productClicked)="showProductModal($event)"></cards>
